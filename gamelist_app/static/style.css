@@ -1,0 +1,8 @@
+* {
+    outline: 1px dotted magenta;
+    --primary: #FF7A12;
+    --secondary: #000046;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
