@@ -17,26 +17,26 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <nav class="main">
-            <a href=""><img src="{% static 'img/mgl-logo.svg' %}" alt="mgl logo"></a>
-            {% block nav %}
-            <div>
-                <a href="" class="btn btn-secondary">Login</a>
-                <a href="" class="btn btn-primary">Sign Up</a>
-            </div> 
-            {% endblock %}
-        </nav>
-    
-        <nav class="">
-            <ul>
-                <li><a href="">Games</a></li>
-                <li><a href="">Reviews</a></li>
-                <li><a href="">Community</a></li>
-            </ul>
-        </nav>
+    <header class="main">
+        <a href="" class="header-logo"></a>
+        <div onclick="openMenu()" id="menu-btn" class="menu-btn">
+			<div class="menu-btn_burger"></div>
+		</div>
+    </header><!-- main nav -->
 
+    <ul class="list-group list-group-flush mobile-nav">
+        <li class="list-group-item bold"><a href="">Home</a></li> 
+        <li class="list-group-item bold"><a href="">Login</a></li> 
+        <li class="list-group-item bold"><a href="">Sign Up</a></li>
+        <li class="list-group-item"><a href="">Games</a></li> 
+        <li class="list-group-item"><a href="">Reviews</a></li> 
+        <li class="list-group-item"><a href="">Community</a></li> 
+    </ul>
+    
+    <div class="wrapper">
+        {% block content %}
         <h2 class="header">{% block header %} {% endblock %}</h2>
+        {% endblock %}
     </div><!--wrapper-->
 
 </body>
