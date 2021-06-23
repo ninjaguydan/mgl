@@ -93,6 +93,11 @@ a {
 
 .wrapper {
     padding: 30px;
+
+}
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .card {
@@ -108,4 +113,9 @@ a {
     }
     .card h5 {
         font-weight: 600;
+        font-size: 1em;
+    }
+    .card p {
+        font-size: 0.75em;
+        margin-bottom: 30px;
     }
